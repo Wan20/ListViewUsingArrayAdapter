@@ -8,9 +8,18 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
-
+private ListView lv;
+    private String[] fish = new String[]{
+            "Arwana Super Red",
+            "Arwana Golden (Cross Back, Cross Back Golden,CBG)",
+            "Arwana Golden Red (Red Tail Golden, RTG)",
+            "Arwana Hijau (Green Arwana / Golden Pino)",
+            "Arwana Banjar",
+            "Arwana Irian (Jardini)"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,14 +27,17 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+
+
+        //inisialisasi ListView dan buat object adapter untuk menampung data ke dalam ListView
+            lv = (ListView) findViewById(R.id.listView);
+            ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivity.this,
+                android.R.layout.simple_list_item_1,
+                android.R.id.text1, fish);
+
+        //tampilkan data yang ada di adapter ke dalam ListView
+            lv.setAdapter(adapter);
+
     }
 
     @Override
