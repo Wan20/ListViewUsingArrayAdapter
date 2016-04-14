@@ -12,7 +12,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
-private ListView lv;
     private String[] fish = new String[]{
             "Arwana Super Red",
             "Arwana Golden (Cross Back, Cross Back Golden,CBG)",
@@ -20,6 +19,8 @@ private ListView lv;
             "Arwana Hijau (Green Arwana / Golden Pino)",
             "Arwana Banjar",
             "Arwana Irian (Jardini)"};
+
+    private ListView lv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,17 +28,13 @@ private ListView lv;
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
-
         //inisialisasi ListView dan buat object adapter untuk menampung data ke dalam ListView
-            lv = (ListView) findViewById(R.id.listView);
-            ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivity.this,
-                android.R.layout.simple_list_item_1,
-                android.R.id.text1, fish);
+        lv = (ListView)findViewById(R.id.listView);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>
+                (MainActivity.this, R.layout.item, fish);
 
         //tampilkan data yang ada di adapter ke dalam ListView
-            lv.setAdapter(adapter);
-
+        lv.setAdapter(adapter);
     }
 
     @Override
