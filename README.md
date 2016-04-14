@@ -21,9 +21,9 @@ ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivity.this, andro
   this two example not very different function, just one example more flexibel than the other so i put 
   it in same theme apps.
   
-  Note: dicoding.com is one from some academy where i learn, however they make student more comfortable 
+  Note: dicoding.com is an academy where i learn android, however they make student more comfortable 
   for learn. So, i don't say one code is more better. Just want say a little different make a different 
   "title".
   
-  Please for someone who read my github to discuss with me if i have a mistake, however programmer must 
-  learn from any mistake and improve from that, Thank You :) ..
+  Please for someone who read my github to discuss with me if i have a mistake so i can fix it next time, 
+  however programmer must learn from any mistake and improve from that, Thank You :) ..
