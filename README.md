@@ -8,7 +8,7 @@ I learn this from
 i look a little different in this code:
 ###Example 1:
 ArrayAdapter arrayAdapter = new ArrayAdapter(this, R.layout.single_item ,eatables); --techlove
-Note: have a item.xml
+#####Note: have a item.xml
 
 ###Example 2:
 ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_list_item_1, 
