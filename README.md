@@ -1,8 +1,8 @@
 # ListViewUsingArrayAdapter
 I learn this from 
-http://techlovejump.com/android-arrayadapter-example-listview/
-dicoding.com/academies/5
-http://android-beginner-lessons.blogspot.co.id/2015/10/android-listactivity.html
+###http://techlovejump.com/android-arrayadapter-example-listview/
+###www.dicoding.com/academies/5
+###http://android-beginner-lessons.blogspot.co.id/2015/10/android-listactivity.html
 
 ##
 i look a little different in this code:
